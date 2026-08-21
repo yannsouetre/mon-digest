@@ -1,0 +1,370 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-08-21T09:00:00+02:00",
+  "slot": "09:00",
+  "news": {
+    "active_version": "09h",
+    "versions": [
+      {
+        "label": "09h",
+        "sections": [
+          {
+            "name": "International",
+            "items": [
+              {
+                "id": "hongkong-tiananmen-condamnation",
+                "title": "Hong Kong : deux militants de la mémoire de Tiananmen condamnés pour subversion",
+                "url": "https://actu.orange.fr/monde/hong-kong-deux-militants-de-la-memoire-de-tiananmen-reconnus-coupables-d-quot-incitation-a-la-subversion-quot-CNT000002rr60W.html",
+                "summary": "Le tribunal de Hong Kong a reconnu coupables d'incitation à la subversion Lee Cheuk-yan et Chow Hang-tung, figures de l'Alliance qui organisait les veillées annuelles en mémoire de la répression de Tiananmen en 1989.",
+                "bullets": [
+                  "415 arrestations ont eu lieu à Hong Kong au nom de la sécurité nationale depuis 2020, dont 185 condamnations début août",
+                  "Lee Cheuk-yan (69 ans) et Chow Hang-tung (41 ans) risquent jusqu'à 10 ans de prison ; un troisième prévenu, Albert Ho (74 ans), a plaidé coupable",
+                  "Toute commémoration publique de Tiananmen est de fait interdite depuis la loi sur la sécurité nationale de 2020"
+                ],
+                "takeaway": "Le verdict confirme que même la mémoire de 1989 est désormais traitée comme une menace à la sécurité nationale à Hong Kong.",
+                "time_label": "09h",
+                "meta": "21/08 07h38",
+                "thumbnail_url": "https://media2.woopic.com/api/v1/images/2275%2Factu%2Fafp-news%2F393993f6-8303-47c0-a148-3212ea210645-3.jpg",
+                "thumbnail_kind": "landscape",
+                "caution_note": "Sujet sensible : répression politique"
+              },
+              {
+                "id": "onu-vote-nouveau-secretaire-general",
+                "title": "ONU : nouveau vote au Conseil de sécurité pour désigner le prochain secrétaire général",
+                "url": "https://actu.orange.fr/monde/nouveau-vote-au-conseil-de-securite-pour-designer-le-prochain-chef-de-l-onu-CNT000002rr5MQ.html",
+                "summary": "Le Conseil de sécurité a organisé vendredi un second vote indicatif pour départager les huit candidats en lice pour succéder à António Guterres, dont le second mandat s'achève le 31 décembre.",
+                "bullets": [
+                  "8 candidats restent en lice, 5 femmes et 3 hommes ; Rebeca Grynspan (Costa Rica, ex-cheffe de la CNUCED) a recueilli le plus de mentions favorables au vote du 30 juillet",
+                  "L'Amérique latine revendique le poste par tradition de rotation géographique ; plusieurs pays plaident pour une première femme secrétaire générale",
+                  "Le vote se fait à bulletin secret via trois mentions (encourager, décourager, sans opinion), un minimum de 9 voix étant requis sans veto des membres permanents"
+                ],
+                "takeaway": "La course à la succession de Guterres s'accélère, portée par la perspective inédite d'une première femme à la tête de l'ONU.",
+                "time_label": "09h",
+                "meta": "21/08 05h03",
+                "thumbnail_url": "https://media1.woopic.com/api/v1/images/2275%2Factu%2Fafp-news%2F9bc0bd63-b32b-445e-a4e9-9e023e13ab37.jpg",
+                "thumbnail_kind": "landscape",
+                "caution_note": null
+              },
+              {
+                "id": "appalaches-maladie-poumon-noir",
+                "title": "Aux Appalaches, la « maladie du poumon noir » regagne du terrain chez les mineurs",
+                "url": "https://actu.orange.fr/monde/dans-les-appalaches-la-quot-maladie-du-poumon-noir-quot-ronge-de-plus-en-plus-les-mineurs-CNT000002rr5KY.html",
+                "summary": "Aux États-Unis, la pneumoconiose progresse de nouveau chez les mineurs de charbon des Appalaches : l'épuisement des veines faciles d'accès force à extraire davantage de roche chargée en silice, jusqu'à 20 fois plus toxique que la poussière de charbon.",
+                "bullets": [
+                  "1 mineur sur 3 ayant plus de 25 ans d'ancienneté est aujourd'hui touché, sur environ 30 000 mineurs actifs dans la région",
+                  "Le patient le plus jeune diagnostiqué avec une fibrose massive progressive n'avait que 30 ans",
+                  "Une règle de 2024 abaissant les seuils d'exposition à la silice a été suspendue par la justice"
+                ],
+                "takeaway": "Une maladie qu'on croyait en recul refait surface, illustrant les limites des protections réglementaires actuelles pour les mineurs américains.",
+                "time_label": "09h",
+                "meta": "21/08 05h00",
+                "thumbnail_url": "https://media1.woopic.com/api/v1/images/2275%2Factu%2Fafp-news%2Fd5590ce9-bcb5-47c7-8c1d-90fcdd1e489e.jpg",
+                "thumbnail_kind": "landscape",
+                "caution_note": null
+              }
+            ]
+          },
+          {
+            "name": "France",
+            "items": [
+              {
+                "id": "franchises-medicales-doublement-abandonne",
+                "title": "Le gouvernement abandonne le doublement du plafond des franchises médicales",
+                "url": "https://actu.orange.fr/france/le-doublement-du-plafond-des-franchises-medicales-abandonne-par-le-gouvernement-magic-CNT000002rqYsd.html",
+                "summary": "Face à l'incompréhension suscitée par le projet, l'exécutif renonce à faire passer de 50 à 100 euros le plafond annuel des franchises médicales et privilégie une revalorisation indexée sur l'inflation depuis 2005.",
+                "bullets": [
+                  "Le projet initial prévoyait un doublement du plafond, de 50 à 100 euros par an",
+                  "La nouvelle piste retenue : une hausse indexée sur l'inflation depuis 2005, d'ampleur bien moindre",
+                  "Associations de patients et de malades chroniques s'opposaient à la mesure initiale, jugée trop brutale"
+                ],
+                "takeaway": "Un renoncement qui épargne les malades chroniques mais laisse ouverte la question du financement de l'Assurance maladie.",
+                "time_label": "09h",
+                "meta": "20/08 21h10",
+                "thumbnail_url": "https://media3.woopic.com/api/v1/images/2275%2Factu%2Fmagic-articles-6medias%2F441%2F132%2F2d956aed5ce4131adb0acb16f4%2F4411322d956aed5ce4131adb0acb16f4.jpg",
+                "thumbnail_kind": "landscape",
+                "caution_note": null
+              },
+              {
+                "id": "orages-vigilance-orange-corse-var-am",
+                "title": "Orages : quatre départements en vigilance orange, activités de plein air interdites en Corse",
+                "url": "https://actu.orange.fr/france/orages-quatre-departements-en-vigilance-orange-les-activites-de-pleine-nature-interdites-en-corse-magic-CNT000002rr7tw.html",
+                "summary": "Météo-France a placé la Corse-du-Sud, la Haute-Corse, le Var et les Alpes-Maritimes en vigilance orange orages ce vendredi, avec des rafales pouvant dépasser 150 km/h en Corse et toutes les activités de pleine nature interdites jusqu'à minuit.",
+                "bullets": [
+                  "Rafales attendues entre 100 et 120 km/h, jusqu'à 150 km/h ou plus dans l'ouest de la Corse",
+                  "30 à 50 mm de pluie possibles sur de courtes périodes, avec risque d'inondation dans le Var et les Alpes-Maritimes",
+                  "Environ 1 000 foyers restent privés d'électricité après un premier épisode orageux jeudi"
+                ],
+                "takeaway": "Un nouvel épisode orageux violent frappe le pourtour méditerranéen, avec interdiction totale des activités de plein air en Corse.",
+                "time_label": "09h",
+                "meta": "21/08 07h00",
+                "thumbnail_url": "https://media2.woopic.com/api/v1/images/2275%2Factu%2Fmagic-articles-6medias%2F8d0%2F39f%2F745ca738ab926c003404d6e7e3%2F8d039f745ca738ab926c003404d6e7e3.jpg",
+                "thumbnail_kind": "landscape",
+                "caution_note": "Alerte météo : vigilance orange"
+              },
+              {
+                "id": "haute-marne-maire-chaumont-blesse",
+                "title": "Haute-Marne : le maire de Chaumont blessé par balle, un geste sur lui-même selon le parquet",
+                "url": "https://actu.orange.fr/france/haute-marne-blesse-par-balle-le-maire-de-chaumont-se-serait-lui-meme-tire-dessus-magic-CNT000002rqXnJ.html",
+                "summary": "Antoine Desfretier, maire de Chaumont (20 000 habitants) et président de l'agglomération, a été retrouvé blessé par balle dans son véhicule dans la nuit du 18 au 19 août ; le parquet confirme un geste commis contre lui-même.",
+                "bullets": [
+                  "Il a lui-même alerté les secours et a été opéré au CHU de Dijon ; ses jours ne sont pas en danger",
+                  "Le procureur évoque des écrits manuscrits laissés par l'élu expliquant sa détresse",
+                  "Desfretier préside également l'agglomération du Grand Chaumont"
+                ],
+                "takeaway": "Un événement qui relance la question de la santé mentale et de la pression pesant sur les élus locaux.",
+                "time_label": "09h",
+                "meta": "20/08 19h45",
+                "thumbnail_url": "https://media2.woopic.com/api/v1/images/2275%2Factu%2Fmagic-articles-6medias%2F20a%2F309%2F4804fbcc637e3a3ddcfa052ebb%2F20a3094804fbcc637e3a3ddcfa052ebb.jpg",
+                "thumbnail_kind": "landscape",
+                "caution_note": "Sujet sensible : détresse personnelle, geste auto-infligé"
+              },
+              {
+                "id": "bouches-du-rhone-fillette-sauvee-aubagne",
+                "title": "Bouches-du-Rhône : une fillette suspendue dans le vide sauvée in extremis par les pompiers",
+                "url": "https://actu.orange.fr/france/bouches-du-rhone-suspendue-dans-le-vide-une-fillette-sauvee-in-extremis-par-les-pompiers-magic-CNT000002rqYTN.html",
+                "summary": "À Aubagne, une fillette de 6 ans s'est retrouvée suspendue à une loggia du 5e étage après s'être retrouvée seule et bloquée à l'intérieur de l'appartement ; des voisins ont disposé des matelas au sol en attendant les secours.",
+                "bullets": [
+                  "L'enfant, livrée à elle-même, a été récupérée saine et sauve par les pompiers",
+                  "Des voisins ont improvisé une protection avec des matelas pendant l'intervention",
+                  "Les autorités doivent déterminer les circonstances ayant conduit à cette situation"
+                ],
+                "takeaway": "Un sauvetage spectaculaire qui interroge sur la surveillance des jeunes enfants laissés seuls à domicile.",
+                "time_label": "09h",
+                "meta": "20/08 22h30",
+                "thumbnail_url": "https://media2.woopic.com/api/v1/images/2275%2Factu%2Fmagic-articles-6medias%2F2f0%2F154%2Ff9a1444c07c66ccb175a370214%2F2f0154f9a1444c07c66ccb175a370214.jpg",
+                "thumbnail_kind": "landscape",
+                "caution_note": "Sujet sensible : mise en danger d'un enfant"
+              }
+            ]
+          },
+          {
+            "name": "Conflits",
+            "items": [
+              {
+                "id": "iran-guerre-economique-washington-allies-chine",
+                "title": "Iran : Washington presse ses alliés et la Chine de rejoindre sa guerre économique",
+                "url": "https://actu.orange.fr/economie/washington-presse-ses-allies-et-la-chine-de-rejoindre-sa-guerre-economique-contre-l-iran-CNT000002rqLBh.html",
+                "summary": "Les États-Unis intensifient la pression économique sur l'Iran sans reprise des frappes militaires ; le secrétaire au Trésor Scott Bessent avertit que les pays maintenant des liens avec Téhéran « précipiteraient leur économie vers l'oubli ».",
+                "bullets": [
+                  "La Chine représente plus de 25% du commerce iranien en 2024, ce qui en fait la cible prioritaire de la pression américaine",
+                  "De nouvelles mesures visent le financement du Hezbollah, lié aux Gardiens de la révolution iraniens",
+                  "Un porte-avions de remplacement est déployé au Moyen-Orient, tandis que Washington maintient blocus maritime et sanctions"
+                ],
+                "takeaway": "Washington mise sur l'arme économique totale plutôt que sur une reprise des frappes, au risque d'entraîner la Chine dans le bras de fer.",
+                "time_label": "09h",
+                "meta": "20/08 23h20",
+                "thumbnail_url": "https://media2.woopic.com/api/v1/images/2275%2Factu%2Fafp-news%2F20c0876f-1a13-4319-b80d-4d51a406f546.jpg",
+                "thumbnail_kind": "landscape",
+                "caution_note": null
+              },
+              {
+                "id": "syrie-administration-kurde-integree-etat",
+                "title": "Syrie : l'administration kurde désormais intégrée à celle de l'État",
+                "url": "https://actu.orange.fr/monde/en-syrie-l-administration-kurde-desormais-integree-dans-celle-de-l-etat-CNT000002rqZLV.html",
+                "summary": "Le chef kurde Mazloum Abdi a annoncé l'achèvement de l'intégration des institutions civiles et militaires kurdes dans l'appareil d'État syrien, mettant fin de fait aux espoirs d'autonomie, en application de l'accord signé en janvier avec Damas.",
+                "bullets": [
+                  "Les forces kurdes sont passées d'environ 100 000 à 50 000 combattants dans le cadre de cette intégration",
+                  "Les Kurdes représentent environ 15% de la population syrienne",
+                  "Des milliers de combattants kurdes se sont retirés de la région dans ce cadre"
+                ],
+                "takeaway": "La dissolution de facto de l'autonomie kurde marque une étape clé de la reconstruction de l'État syrien post-guerre civile.",
+                "time_label": "09h",
+                "meta": "21/08 00h51",
+                "thumbnail_url": "https://media2.woopic.com/api/v1/images/2275%2Factu%2Fafp-news%2Feb8598f5-4153-4f07-8375-bb52eff0c945-3.jpg",
+                "thumbnail_kind": "landscape",
+                "caution_note": null
+              }
+            ]
+          },
+          {
+            "name": "IA",
+            "items": [],
+            "empty_message": "Collecte momentanément indisponible"
+          },
+          {
+            "name": "Clubic",
+            "items": [],
+            "empty_message": "Collecte momentanément indisponible"
+          },
+          {
+            "name": "Hashtable",
+            "items": [
+              {
+                "id": "hashtable-primaires-democrates-republicains",
+                "title": "Les Démocrates gagnent leurs primaires, les Républicains gagnent les élections",
+                "url": "https://h16free.com/2026/08/19/85018-les-democrates-gagnent-leurs-primaires-les-republicains-gagnent-les-elections",
+                "summary": "H16 analyse comment les victoires de candidats socialistes (DSA) aux primaires démocrates américaines pourraient paradoxalement renforcer les Républicains aux élections de mi-mandat, en creusant l'écart entre militants radicaux et électorat modéré.",
+                "bullets": [
+                  "Des candidats DSA comme Abdul El-Sayed l'emportent dans les primaires démocrates malgré l'opposition de l'establishment, mais restent faibles chez les électeurs populaires et noirs",
+                  "Les priorités des militants (conflit israélo-palestinien, abolition de la police) éloigneraient les 43% d'indépendants modérés qui décident souvent des élections de mi-mandat",
+                  "54% des sondés se disent favorables au capitalisme contre 39% au socialisme, un rapport de force jugé structurellement avantageux pour les Républicains"
+                ],
+                "takeaway": "Une lecture qui souligne le risque, pour les Démocrates, de voir leur aile radicale gagner en visibilité sans convaincre l'électorat décisif du centre.",
+                "time_label": "09h",
+                "meta": "billet du 19/08 — aucun nouveau billet publié depuis (revérifié le 21/08)",
+                "thumbnail_url": "https://h16free.com/wp-content/uploads/2025/07/trump-thumbs-up.jpg",
+                "thumbnail_kind": "landscape",
+                "caution_note": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "youtube": {
+    "videos": [],
+    "shorts": []
+  },
+  "releases": {
+    "groups": [
+      {
+        "name": "Écran",
+        "items": [
+          {
+            "id": "insidious-invasion-du-lointain",
+            "title": "Insidious : l'invasion du lointain",
+            "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000016503.html",
+            "summary": "Une jeune mère découvre qu'elle peut voyager jusqu'au Lointain, un royaume purgatoire des âmes perdues, et y puiser un pouvoir qui attire l'attention d'entités malveillantes.",
+            "bullets": [],
+            "takeaway": null,
+            "meta": "film d'horreur · sortie en salles le 2026-08-19 · réalisé par Jacob Chase",
+            "time_label": null,
+            "thumbnail_url": "https://fr.web.img5.acsta.net/img/ec/35/ec35f784920486fc0e3ff35b7aa4fc41.jpg",
+            "thumbnail_kind": "poster",
+            "caution_note": null
+          }
+        ],
+        "empty_message": "Pas de nouveautés"
+      },
+      {
+        "name": "Livres & BD",
+        "items": [
+          {
+            "id": "les-expiateurs-tade-thompson",
+            "title": "« Les expiateurs » de Tade Thompson",
+            "url": "https://www.fantastinet.com/les-expiateurs-de-tade-thompson/",
+            "summary": "Dans un Londres contemporain, un enquêteur découvre un lien troublant entre le meurtre d'une mère et de sa fille et des dizaines de crimes similaires, marqués par une substance étrange et des victimes identiques.",
+            "bullets": [],
+            "takeaway": null,
+            "meta": "novella de science-fiction · sortie le 2026-08-20 · Éditions Le Bélial (coll. Une Heure-Lumière)",
+            "time_label": null,
+            "thumbnail_url": "https://www.fantastinet.com/wp-content/uploads/2026/08/les_expiateurs.jpg",
+            "thumbnail_kind": "cover",
+            "caution_note": null
+          }
+        ],
+        "empty_message": "Pas de nouveautés"
+      },
+      {
+        "name": "Musique",
+        "items": [
+          {
+            "id": "lustmord-avec-dave-lombardo-the-pulse-of-atoms",
+            "title": "Lustmord (avec Dave Lombardo) — The Pulse of Atoms",
+            "url": "https://www.side-line.com/lustmord-lombardo-pulse-of-atoms/",
+            "summary": "single « Paleomagnetic Resonance » déjà paru",
+            "bullets": [],
+            "takeaway": null,
+            "meta": "album · sortie 2026-10-02 · Ipecac Recordings",
+            "time_label": null,
+            "thumbnail_url": "https://www.side-line.com/wp-content/uploads/2026/08/lustmord-lombardo-the-pulse-of-atoms.webp",
+            "thumbnail_kind": "cover",
+            "caution_note": null
+          },
+          {
+            "id": "swans-newly-sentient-being",
+            "title": "Swans — Newly Sentient Being",
+            "url": "https://www.side-line.com/swans-newly-sentient-being/",
+            "summary": "4LP+DVD, 2CD+DVD, numérique",
+            "bullets": [],
+            "takeaway": null,
+            "meta": "album live (dernier de l'ère Big Sound) · sortie 2026-10-02 · Mute / Young God Records",
+            "time_label": null,
+            "thumbnail_url": "https://www.side-line.com/wp-content/uploads/2026/07/swans-newly-sentient-being.webp",
+            "thumbnail_kind": "cover",
+            "caution_note": null
+          },
+          {
+            "id": "ministry-hate-to-go-take-out-or-delivery",
+            "title": "Ministry — Hate To Go (Take Out Or Delivery)",
+            "url": "https://www.side-line.com/ministry-final-album-hate-to-go-burned-out/",
+            "summary": "tournée d'adieu avec Die Krupps",
+            "bullets": [],
+            "takeaway": null,
+            "meta": "album (dernier album studio) · sortie 2026-10-30 · Cleopatra Records",
+            "time_label": null,
+            "thumbnail_url": null,
+            "thumbnail_kind": "cover",
+            "caution_note": null
+          },
+          {
+            "id": "laibach-die-kanone",
+            "title": "Laibach — Die Kanone",
+            "url": "https://www.side-line.com/laibach-die-kanone-vinyl-cd/",
+            "summary": "avec Bijelo Dugme ; vinyle vert limité, digipak CD",
+            "bullets": [],
+            "takeaway": null,
+            "meta": "single physique · sortie 2026-10-30 · Matrix Music Arhiv",
+            "time_label": null,
+            "thumbnail_url": "https://www.side-line.com/wp-content/uploads/2026/08/laibach-die-kanone-vinyl-cover.webp",
+            "thumbnail_kind": "cover",
+            "caution_note": null
+          },
+          {
+            "id": "steven-wilson-titre-a-confirmer",
+            "title": "Steven Wilson — (titre à confirmer)",
+            "url": "https://www.loudersound.com/bands-artists/steven-wilson-2026-new-album",
+            "summary": "annonce officielle attendue — toujours sans titre ni date précise",
+            "bullets": [],
+            "takeaway": null,
+            "meta": "album conceptuel · sortie 2026-10 (à confirmer) · (à confirmer)",
+            "time_label": null,
+            "thumbnail_url": null,
+            "thumbnail_kind": "cover",
+            "caution_note": null
+          },
+          {
+            "id": "street-sects-no-percentage-in-caution",
+            "title": "Street Sects — No Percentage in Caution",
+            "url": "https://streetsects.bandcamp.com/album/no-percentage-in-caution",
+            "summary": "Bandcamp inaccessible aux robots — date à affiner",
+            "bullets": [],
+            "takeaway": null,
+            "meta": "single 7\" · sortie 2026 (à confirmer) · autoédition / 7\" via Evil Greed",
+            "time_label": null,
+            "thumbnail_url": null,
+            "thumbnail_kind": "cover",
+            "caution_note": null
+          },
+          {
+            "id": "celldweller-never-a-thief",
+            "title": "Celldweller — Never A Thief",
+            "url": "https://www.thatericalper.com/2026/08/19/celldweller-enters-the-world-of-thief-with-new-soundtrack-single-never-a-thief/",
+            "summary": "premier single de la bande originale du roman graphique « Thief: Pulse of Promise », avec la voix de Stephen Russell (Garrett)",
+            "bullets": [],
+            "takeaway": null,
+            "meta": "single (BO) · paru le 2026-08-19 · FiXT",
+            "time_label": null,
+            "thumbnail_url": "https://www.thatericalper.com/wp-content/uploads/2026/08/ceff.jpg",
+            "thumbnail_kind": "cover",
+            "caution_note": null
+          }
+        ],
+        "empty_message": "Pas de nouveautés"
+      },
+      {
+        "name": "Jeux vidéo",
+        "items": [],
+        "empty_message": "Pas de nouveautés"
+      }
+    ]
+  },
+  "errors": [
+    "Conflits : seulement 2 sujets neufs dans la fenêtre 20h-09h (minimum 3 non atteint) — orange.fr/monde entièrement parcouru (fresh + cache-bust) et WebSearch ciblées (Iran, Gaza, Ukraine) sans résultat frais openable sur les domaines autorisés ; les autres pistes candidates (Trump-Kim, Vatican-Liban) publiées avant 20h ont été écartées.",
+    "IA : ActuIA sert toujours un cache figé daté du 03/07/2026 (revérifié ce run) ; Clubic (liste dédiée et cache-bust) indisponible (robots.txt) ; 2 WebSearch ciblées sans résultat frais openable — rubrique vide.",
+    "Clubic : liste dédiée /actualites-informatique/ figée depuis le 20/08 13h20 (identique sans et avec cache-bust, cache-bust désormais bloqué par robots.txt) — rubrique vide.",
+    "YouTube : sweep complet des 66 chaînes = 0 nouvelle vidéo depuis la veille 20h ; garde-fou zéro-vidéo appliqué (JSON brut sur Military Summary, MS Global Digest, Les Conflits en Cartes) — aucune anomalie de collecte détectée, résultat confirmé.",
+    "Musique : flux Side-Line indisponible (403) malgré nouvel essai ; rotation du jour (groupe 5 : Street Sects, Ghost, Recoil, Celldweller, KMFDM, Rome) via WebSearch — 1 nouveauté retenue (Celldweller), les autres pistes trop anciennes ou non confirmées."
+  ]
+}
