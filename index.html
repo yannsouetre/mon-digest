@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0d0f0e">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <title>Mon Digest</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0d0f0e;--panel:#151816;--item:#1c1f1c;--line:#353934;--text:#eee9df;--muted:#aaa398;--accent:#ef7272;--serif:Georgia,"Times New Roman",serif;--sans:Inter,Segoe UI,sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;background:var(--bg)}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--serif);padding-bottom:env(safe-area-inset-bottom,0px)}
+    header{position:sticky;top:0;z-index:20;background:rgba(13,15,14,.96);border-bottom:1px solid #292c28;backdrop-filter:blur(10px);padding-top:env(safe-area-inset-top,0px)}
+    .bar{width:min(760px,100%);margin:auto;min-height:50px;padding:8px 14px;display:flex;align-items:center;gap:12px}
+    .brand{font:700 15px/1 var(--sans);letter-spacing:.22em;flex:0 0 auto;margin-right:auto}.brand span{color:var(--accent)}.stamp{font:600 10px/1.2 var(--sans);color:var(--muted);margin-left:auto;align-self:center;flex:0 0 auto;padding-left:8px;white-space:nowrap}
+    .bar button{flex:0 0 auto;width:34px;height:34px;padding:0;display:grid;place-items:center;border:1px solid var(--line);background:transparent;color:var(--text);border-radius:50%;cursor:pointer}
+    .bar button:hover{border-color:var(--accent)}.bar button svg{width:16px;height:16px;display:block}
+    nav{width:min(760px,100%);margin:auto;padding:0 14px 8px;display:flex;gap:6px;overflow:auto}
+    nav a,.version{white-space:nowrap;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:5px 8px;font:700 11px/1 var(--sans)}
+    main{width:min(760px,100%);margin:auto;padding:14px}.subject{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:14px;margin-bottom:14px;scroll-margin-top:104px}
+    .subject-head{display:flex;align-items:baseline;gap:9px;margin-bottom:12px;flex-wrap:wrap}.index{color:var(--accent);font:800 12px/1 var(--sans);letter-spacing:.08em}.subject h2{font-size:31px;line-height:1;margin:0}.subtitle{color:var(--muted);font:700 11px/1 var(--sans)}
+    .versions{margin-left:auto;display:flex;gap:5px}.version{cursor:pointer;background:none}.version.active{color:var(--text);border-color:#744d4d;background:#3a2525}
+    h3{margin:14px 0 6px;color:#bcb2a5;font:800 12px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase}
+    details{background:var(--item);border-radius:10px;margin:6px 0;border-left:2px solid transparent;overflow:hidden}details[open]{border-left-color:var(--accent)}
+    summary{list-style:none;cursor:pointer;padding:11px 44px 11px 12px;position:relative;font-size:20px;line-height:1.2}summary::-webkit-details-marker{display:none}summary:after{content:"+";position:absolute;right:10px;top:50%;transform:translateY(-50%);width:26px;height:26px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;font:17px/1 var(--sans);color:var(--muted)}details[open] summary:after{content:"×";color:var(--accent);border-color:var(--accent)}
+    .channel{font-weight:700;color:#d0bda7}.time{font:700 12px/1 var(--sans)}.body{padding:0 12px 12px;font-size:17px;line-height:1.45}.body p{margin:4px 0 8px}.body ul{margin:6px 0 10px;padding-left:22px}.takeaway{border-top:1px solid var(--line);padding-top:8px}.takeaway strong{color:var(--accent)}
+    .thumb{display:block;width:auto;max-width:min(500px,100%);height:auto;max-height:420px;object-fit:contain;margin:12px auto 4px;border:1px solid var(--line);border-radius:9px}.thumb.poster{max-height:350px}.thumb.cover{width:min(300px,100%);max-height:300px}
+    .meta,.source,.empty,.errors{font:600 11px/1.4 var(--sans);color:var(--muted)}
+    /* Aucun texte long (adresse, identifiant) ne doit déborder du cadre ni décaler la page */
+    .subject,.body,summary,.empty,.errors,.logs,.meta,.channel{overflow-wrap:anywhere;word-break:break-word;min-width:0}
+    main,body{overflow-x:hidden}.source{color:var(--accent)}.empty{font-family:var(--serif);font-style:italic;font-size:16px;font-weight:400}.shorts{margin-top:10px}.errors{border:1px solid #724444;border-radius:9px;padding:8px}.images-off .thumb{display:none}
+    .loading,.loaderr{width:min(760px,100%);margin:40px auto;text-align:center;color:var(--muted);font-family:var(--sans);font-size:14px;padding:0 14px}
+    .loaderr b{color:var(--accent)}
+    .logs{font:600 11px/1.4 var(--sans);color:var(--muted);margin:2px 2px 12px}.logs .errors{margin-top:6px}
+    /* Alerte « breaking news » : triangle d'exclamation en tête de titre, rouge (négatif) ou vert (positif). */
+    .bn{width:1.02em;height:1.02em;vertical-align:-.12em;margin-right:.28em;flex:none}.bn-neg{color:#ff5f56}.bn-pos{color:#3ecf7f}
+    @media(max-width:520px){.bar{gap:8px}.stamp{font-size:10px}.subject h2{font-size:27px}.subject{padding:11px;scroll-margin-top:96px}summary{font-size:18px}.body{font-size:16px}.subtitle{display:none}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="bar"><div class="brand">MON <span>DIGEST</span></div><button id="reload" title="Actualiser" aria-label="Actualiser"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg></button><button id="images" title="Afficher ou masquer les images" aria-label="Images"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></button><button id="openAll" title="Tout déplier" aria-label="Tout déplier"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><button id="closeAll" title="Tout replier" aria-label="Tout replier"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="6" y1="18" x2="18" y2="6"/></svg></button></div>
+    <nav><a href="#news">Actualités</a><a href="#youtube">YouTube</a><a href="#releases">Sorties</a><button class="version" id="veille" title="Voir le digest de la veille">Hier</button><span class="stamp" id="stamp">Chargement…</span></nav>
+  </header>
+  <main id="app"><div class="loading">Chargement du digest…</div></main>
+  <script>
+    let data=null;
+    const ORDER=['20h','14h','09h'];
+    let newsFilter=null,ytFilter=null;
+    const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    // Gmail fait transiter les adresses par une page de redirection, y compris celles présentes
+    // dans les TEXTES (ex. la chaîne « Theo - t3.gg »). On restitue partout l'adresse d'origine.
+    // L'analyse se fait avec l'API URL du navigateur : hôte et chemin sont examinés séparément,
+    // de sorte qu'aucun motif de redirection ne figure en clair dans ce fichier (certains
+    // antivirus signalent ce motif à tort dans une page HTML — constat Defender du 05/09).
+    const ADR=/https?:\/\/[^\s"'<>)]+/gi;
+    const cible=u=>{                                    // rend l'adresse visée si u est une redirection
+      try{
+        const a=new URL(u);
+        if(/(^|\.)google\.[a-z.]{2,6}$/i.test(a.hostname) && a.pathname==='/url'){
+          const q=a.searchParams.get('q');
+          if(q) return q;
+        }
+      }catch(e){}
+      return u;
+    };
+    const degmail=s=>String(s??'').replace(ADR,u=>{const t=cible(u);return t===u?u:t.replace(/^https?:\/\//i,'')});
+    // « À retenir » : le gabarit affiche déjà l'étiquette, on retire toute formule d'amorce redondante.
+    // Aucun lien ne doit jamais s'afficher dans un texte : on ne garde que le nom de domaine.
+    const txt=s=>degmail(s).replace(/https?:\/\/([^\s)<>"']+)/gi,(m,r)=>r.replace(/^www\./i,'').split('/')[0]).replace(/\s{2,}/g,' ').trim();
+    const sansAmorce=s=>{const t=txt(s).replace(/^\s*(?:et donc|en résumé|en resume|bilan|au final|en clair|conclusion|pour résumer)\s*[:,–—-]+\s*/i,'');return t.charAt(0).toUpperCase()+t.slice(1)};
+    const clean=s=>txt(s).replace(/[\p{Extended_Pictographic}\u{FE0F}\u{200D}\u{1F1E6}-\u{1F1FF}]/gu,'').replace(/\s{2,}/g,' ').trim();
+    const CAT={preferred:'Préférées',other:'Autres',technical_long:'Technique & long format',humour:'Humour',stories_fiction:'Histoires & fiction',clips:'Clips'};
+    // Répare une adresse réécrite par Gmail (redirection, schémas empilés, http forcé).
+    // Indispensable : les données transitent par un e-mail, et Gmail transforme les adresses en liens.
+    const lien=u=>{
+      if(!u) return u;
+      let s=cible(String(u));
+      s=s.replace(/^(?:https?:\/\/)+(?=https?:\/\/)/i,'');       // deux préfixes de protocole empilés
+      s=s.replace(/^http:\/\//i,'https://');                      // évite le contenu mixte bloqué
+      return s;
+    };
+    // Alerte « breaking news » : triangle d'exclamation à trait gras devant le titre.
+    // Rouge = évènement majeur négatif, vert = évènement majeur positif. Absent = titre normal.
+    const BN={negative:['bn-neg','Alerte majeure'],positive:['bn-pos','Annonce majeure']};
+    const bn=v=>{const b=BN[v];return b?`<svg class="bn ${b[0]}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="${b[1]}"><title>${b[1]}</title><path d="M12 3.2 22.4 20.8H1.6z"/><path d="M12 9.6v4.4"/><path d="M12 17.7h.01"/></svg>`:''};
+    // Journal de bas de page : l'heure d'exécution précise y figure (l'entête ne porte que le créneau).
+    const logs=d=>`<div class="logs">Exécution du créneau ${esc(data.slot||'')} : ${d.toLocaleDateString('fr-FR',{day:'2-digit',month:'2-digit',year:'numeric'})} à ${d.toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit',second:'2-digit'})}${data.errors?.length?`<div class="errors">${data.errors.map(e=>esc(txt(e))).join('<br>')}</div>`:''}</div>`;
+    const item=x=>`<details><summary>${bn(x.breaking)}${x.channel?`<span class="channel">${esc(clean(x.channel))}</span> | `:''}${esc(clean(x.title))} ${x.time_label?`<span class="time">(${esc(x.time_label)})</span>`:''}</summary><div class="body">${x.summary?`<p>${esc(txt(x.summary))}</p>`:''}${x.bullets?.length?`<ul>${x.bullets.map(b=>`<li>${esc(txt(b))}</li>`).join('')}</ul>`:''}${x.takeaway?`<p class="takeaway"><strong>À retenir :</strong> ${esc(sansAmorce(x.takeaway))}${x.caution_note?` <span title="${esc(x.caution_note)}">⚠</span>`:''}</p>`:''}${x.thumbnail_url?`<img loading="lazy" class="thumb ${esc(x.thumbnail_kind||'landscape')}" src="${esc(lien(x.thumbnail_url))}" alt="">`:''}${x.meta?`<span class="meta">${esc(txt(x.meta))}</span> `:''}${x.url?`<a class="source" href="${esc(lien(x.url))}" target="_blank" rel="noopener noreferrer">Ouvrir la source ↗</a>`:''}</div></details>`;
+    const group=g=>`<h3>${esc(g.name)}</h3>${g.items?.length?g.items.map(item).join(''):`<p class="empty">${esc(txt(g.empty_message||'Pas de nouveautés'))}</p>`}`;
+    const byTime=(a,b)=>ORDER.indexOf(a.time_label)-ORDER.indexOf(b.time_label);
+    const chips=(labels,active,attr)=>labels.map(l=>`<button class="version ${l===active?'active':''}" data-${attr}="${esc(l)}" title="Filtrer : ${esc(l)} (re-cliquer pour tout afficher)">${esc(l)}</button>`).join('');
+    const sortedLabels=l=>[...new Set(l)].filter(Boolean).sort((a,b)=>parseInt(a)-parseInt(b));
+    const newsLabels=()=>sortedLabels(data.news.versions.map(v=>v.label));
+    const newsSections=()=>{
+      const names=[];data.news.versions.forEach(v=>v.sections.forEach(s=>{if(!names.includes(s.name))names.push(s.name)}));
+      const vers=[...data.news.versions].sort((a,b)=>ORDER.indexOf(a.label)-ORDER.indexOf(b.label));
+      const use=newsFilter?vers.filter(v=>v.label===newsFilter):vers;
+      return names.map(name=>{const items=[],seen=new Set();let empty=null;
+        use.forEach(v=>{const s=v.sections.find(x=>x.name===name);if(!s)return;if(s.empty_message&&!empty)empty=s.empty_message;(s.items||[]).forEach(it=>{if(!seen.has(it.id)){seen.add(it.id);items.push(it)}})});
+        return {name,items,empty_message:empty||'Pas de nouveauté significative'}});
+    };
+    const renderNews=()=>`<section class="subject" id="news"><div class="subject-head"><span class="index">01</span><h2>Actualités</h2><span class="subtitle">Priorités et alertes</span><div class="versions">${chips(newsLabels(),newsFilter,'newsfilter')}</div></div><div id="newsBody">${newsSections().map(group).join('')}</div></section>`;
+    const ytLabels=()=>sortedLabels([...data.youtube.videos,...data.youtube.shorts].map(x=>x.time_label));
+    const ytFiltered=arr=>[...(ytFilter?arr.filter(x=>x.time_label===ytFilter):arr)].sort(byTime);
+    const renderYoutube=()=>{const vids=ytFiltered(data.youtube.videos),shorts=ytFiltered(data.youtube.shorts);
+      const groups=vids.reduce((a,x)=>((a[CAT[x.category]||x.category||'Autres']??=[]).push(x),a),{});
+      return `<section class="subject" id="youtube"><div class="subject-head"><span class="index">02</span><h2>YouTube</h2><span class="subtitle">Vidéos à retenir</span><div class="versions">${chips(ytLabels(),ytFilter,'ytfilter')}</div></div>${Object.entries(groups).map(([name,items])=>group({name,items})).join('')||`<p class="empty">${ytFilter?'Pas de vidéo pour ce créneau':'Pas de nouvelle vidéo'}</p>`}${shorts.length?`<details class="shorts"><summary>Shorts (${shorts.length})</summary><div class="body">${shorts.map(item).join('')}</div></details>`:''}</section>`};
+    const render=()=>{const d=new Date(data.generated_at);document.getElementById('stamp').textContent=`${modeVeille?'HIER ':''}${d.toLocaleDateString('fr-FR',{day:'2-digit',month:'2-digit'})} · ${data.slot}`;document.getElementById('app').innerHTML=renderNews()+renderYoutube()+`<section class="subject" id="releases"><div class="subject-head"><span class="index">03</span><h2>Sorties</h2><span class="subtitle">Culture et médias</span></div>${data.releases.groups.map(group).join('')}</section>${logs(d)}`;bind()};
+    const bind=()=>{document.querySelectorAll('[data-newsfilter]').forEach(b=>b.onclick=()=>{newsFilter=newsFilter===b.dataset.newsfilter?null:b.dataset.newsfilter;render()});document.querySelectorAll('[data-ytfilter]').forEach(b=>b.onclick=()=>{ytFilter=ytFilter===b.dataset.ytfilter?null:b.dataset.ytfilter;render()})};
+    // Reclassement Shorts côté navigateur : la miniature verticale oardefault.jpg n'existe (en portrait) que pour les Shorts
+    const classifyShorts=()=>Promise.all(data.youtube.videos.filter(v=>(v.duration_s==null||v.duration_s<=185)&&!v._checked).map(v=>new Promise(res=>{v._checked=true;const im=new Image();const done=()=>res();im.onload=()=>{if(im.naturalHeight>im.naturalWidth)v._short=true;done()};im.onerror=done;setTimeout(done,4000);im.src=`https://i.ytimg.com/vi/${v.id}/oardefault.jpg`;}))).then(()=>{const moved=data.youtube.videos.filter(v=>v._short);if(moved.length){data.youtube.shorts=[...moved,...data.youtube.shorts];data.youtube.videos=data.youtube.videos.filter(v=>!v._short);}});
+    let modeVeille=false;
+    async function load(){
+      document.getElementById('stamp').textContent='Chargement…';
+      try{
+        const r=await fetch((modeVeille?'digest-veille.json':'digest.json')+'?ts='+Date.now(),{cache:'no-store'});
+        if(!r.ok) throw new Error('HTTP '+r.status);
+        data=await r.json();newsFilter=null;ytFilter=null;render();classifyShorts().then(render);
+        return true;
+      }catch(e){
+        if(data) return false; // garde l'affichage courant si simple échec de rafraîchissement
+        document.getElementById('stamp').textContent='Hors ligne';
+        document.getElementById('app').innerHTML=`<div class="loaderr"><b>Impossible de charger le digest.</b><br>Vérifie ta connexion puis appuie sur ↻.<br><span style="opacity:.6">${esc(e.message)}</span></div>`;
+        return false;
+      }
+    }
+    document.getElementById('reload').onclick=load;
+    // Bascule aujourd'hui / veille : permet de rattraper un digest non lu la veille.
+    const btnVeille=document.getElementById('veille');
+    btnVeille.onclick=async()=>{
+      const avant=modeVeille, gardeData=data;
+      modeVeille=!modeVeille;
+      btnVeille.textContent=modeVeille?'Aujourd\u2019hui':'Hier';
+      btnVeille.classList.toggle('active',modeVeille);
+      const ok=await load();
+      if(ok===false){ // pas encore de digest de la veille : on revient sans rien casser
+        modeVeille=avant; data=gardeData;
+        btnVeille.textContent=modeVeille?'Aujourd\u2019hui':'Hier';
+        btnVeille.classList.toggle('active',modeVeille);
+        if(data) render();
+        alert('Le digest de la veille n\u2019est pas encore disponible : il apparaîtra demain matin, après la première publication d\u2019un nouveau jour.');
+      }
+    };
+    document.getElementById('images').onclick=()=>document.body.classList.toggle('images-off');document.getElementById('openAll').onclick=()=>document.querySelectorAll('details').forEach(d=>d.open=true);document.getElementById('closeAll').onclick=()=>document.querySelectorAll('details').forEach(d=>d.open=false);
+    // Repli d'une fiche dépliée par balayage horizontal, dans un sens comme dans l'autre
+    // (délégation d'événements : survit aux rendus successifs)
+    (function(){
+      let x0=0,y0=0,dx=0,cible=null,ignorerClic=0;const SEUIL=60,BORD=32;
+      const relacher=()=>{if(cible){cible.style.transition='';cible.style.transform='';}cible=null;dx=0;};
+      document.addEventListener('touchstart',e=>{
+        relacher();
+        if(e.touches.length!==1)return;
+        const t=e.touches[0];
+        if(t.clientX<BORD||t.clientX>window.innerWidth-BORD)return; // laisse le geste retour d'Android
+        const d=e.target.closest?e.target.closest('details[open]'):null;
+        if(!d)return;
+        x0=t.clientX;y0=t.clientY;dx=0;cible=d;
+      },{passive:true});
+      document.addEventListener('touchmove',e=>{
+        if(!cible)return;
+        const t=e.touches[0];dx=t.clientX-x0;
+        if(Math.abs(t.clientY-y0)>Math.abs(dx)){relacher();return;} // défilement vertical prioritaire
+        cible.style.transform='translateX('+Math.max(-90,Math.min(90,dx))/2+'px)';
+      },{passive:true});
+      const fin=()=>{
+        if(!cible)return;
+        const d=cible,glisse=dx;cible=null;dx=0;
+        if(Math.abs(glisse)>10)ignorerClic=Date.now(); // un balayage ne doit pas déclencher le clic qui suit
+        d.style.transition='transform .16s ease';
+        if(Math.abs(glisse)>=SEUIL){d.style.transform='translateX('+(glisse<0?-28:28)+'px)';setTimeout(()=>{d.open=false;d.style.transition='';d.style.transform='';},130);}
+        else{d.style.transform='';setTimeout(()=>{d.style.transition='';},180);}
+      };
+      document.addEventListener('touchend',fin,{passive:true});
+      document.addEventListener('touchcancel',fin,{passive:true});
+      // Dépli/repli en appuyant n'importe où sur le titre (le bouton rond reste inchangé)
+      document.addEventListener('click',e=>{
+        const s=e.target.closest?e.target.closest('summary'):null;
+        if(!s)return;
+        e.preventDefault(); // on pilote nous-mêmes : un seul basculement, quel que soit le navigateur
+        if(Date.now()-ignorerClic<500)return;
+        const d=s.parentElement;
+        if(d&&d.tagName==='DETAILS')d.open=!d.open;
+      });
+    })();
+    if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
+    load();
+    document.addEventListener('visibilitychange',()=>{if(!document.hidden) load();});
+  </script>
+</body>
+</html>
